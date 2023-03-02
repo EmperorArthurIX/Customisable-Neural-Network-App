@@ -17,6 +17,11 @@ if st.button("Train the model"):
     from tensorflow.keras.layers import *
     from tensorflow.keras.models import Sequential
     from tensorflow.keras.callbacks import ModelCheckpoint
+#     import keras
+#     from keras.datasets import mnist
+#     from keras.layers import *
+#     from keras.models import Sequential
+#     from keras.callbacks import ModelCheckpoint
     
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
