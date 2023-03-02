@@ -20,6 +20,15 @@ if st.button("Train the model"):
     
     (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
+    cols = st.columns(3)
+    with cols[0]:
+        st.image(x_train[0], width=100)
+    with cols[1]:
+        st.image(x_train[1], width=100)
+    with cols[2]:
+        st.image(x_train[2], width=100)
+
+
     def preprocess_images(images):
         return images/255
     x_train = preprocess_images(x_train)
